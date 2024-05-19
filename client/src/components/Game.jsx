@@ -287,8 +287,9 @@ function Game() {
       let newFen = chess.fen();
       let newHistory = chess.history();
 
-      // Update fen and history
+      // Update fen
       updateFen(newFen);
+      // Update Moving History
       updateMoveHistory(newHistory);
 
       // Send move to backend
